@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE menu
+[
+<!ELEMENT menu (meals, beverages)>
+<!ELEMENT meals (menuItem*)>
+<!ELEMENT beverages (hotBeverages, otherBeverages)>
+<!ELEMENT hotBeverages (menuItem*)>
+<!ELEMENT otherBeverages (menuItem*)>
+<!ELEMENT menuItem (name?, size?, price, description?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT imageURL (#PCDATA)>
+]>
+
+<menu>
+    <meals>
+        <menuItem>
+            <name>
+                Avocado toast
+            </name>
+            <price>
+                15.00
+            </price>
+            <description>
+                Suitable for vegetarians, made with fresh vocado
+            </description>
+            <imageURL>avocadotoast.jpg</imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Burrito
+            </name>
+            <price>
+                18.00
+            </price>
+            <description>
+                Cheese and salad sandwich made with organic, bread
+            </description>
+            <imageURL>burrito.jpg</imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Spinach Pie and Salad
+            </name>
+            <price>
+                20.00
+            </price>
+            <description>
+                Tasty pie with salad
+            </description>
+            <imageURL>pie.jpg</imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Oat meal
+            </name>
+            <price>
+                19.50
+            </price>
+            <description>
+                Tasty oat filled with fruits
+            </description>
+            <imageURL>oatmeal.jpg</imageURL>
+        </menuItem>
+    </meals>
+    <beverages>
+        <hotBeverages>
+            <menuItem>
+                <size>
+                    Small    
+                </size>
+                <price>
+                    3.50
+                </price>
+                <description>
+                    For coffee, please inform the staff of the coffee type.
+                </description>
+                <imageURL>small.jpg</imageURL>
+            </menuItem>
+            <menuItem>
+                <size>
+                    Medium    
+                </size>
+                <price>
+                    4.00
+                </price>
+                <description>
+                    For coffee, please inform the staff of the coffee type.
+                </description>
+                <imageURL>medium.jpg</imageURL>
+            </menuItem>
+            <menuItem>
+                <size>
+                    Large    
+                </size>
+                <price>
+                    4.50
+                </price>
+                <description>
+                    For coffee, please inform the staff of the coffee type.
+                </description>
+                <imageURL>large.jpg</imageURL>
+            </menuItem>
+        </hotBeverages>
+        <otherBeverages>
+            <menuItem>
+                <name>
+                    Soda    
+                </name>
+                <price>
+                    3.00
+                </price>
+                <imageURL>soda.jpg</imageURL>
+            </menuItem>
+            <menuItem>
+                <name>
+                    Fresh juice    
+                </name>
+                <price>
+                    6.00
+                </price>
+                <imageURL>smoothie.jpg</imageURL>
+            </menuItem>
+            <menuItem>
+                <name>
+                    Bottled water    
+                </name>
+                <price>
+                    2.00
+                </price>
+                <imageURL>water.jpg</imageURL>
+            </menuItem>
+        </otherBeverages>
+    </beverages>
+</menu>

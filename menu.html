@@ -48,7 +48,15 @@
         </div>
       </nav>
 
-      <main class="mh-75 bg-light" style="margin-top: 100px"></main>
+      <main class="mh-75 bg-light" style="margin-top: 100px">
+        <h1 class="text-center">Menu</h1>
+        <h2 class="text-center bg-white">Meals</h2>
+        <div id="meals" class="row d-flex text-center"></div>
+        <h2 class="text-center bg-white">Beverages</h2>
+        <div id="hotBeverages" class="row d-flex text-center"></div>
+        <h2 class="text-center bg-white">Other beverages</h2>
+        <div id="otherBeverages" class="row d-flex text-center"></div>
+      </main>
 
       <footer class="bg-white text-center p-2">
         <p>
@@ -66,5 +74,6 @@
       const dateNow = new Date();
       document.getElementById("currentYear").innerHTML = dateNow.getFullYear();
     </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
