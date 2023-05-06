@@ -72,10 +72,9 @@ function createMenuCard(
   });
 
   let imgNode = createNodeWithAttribuites("img", {
-    class: "card-img-top rounded mx-auto",
+    class: "card-img-top rounded mx-auto w-50 h-50",
     src: "images/menu/" + imageURL,
     alt: "image",
-    style: "width:300;height:300;",
   });
 
   let cardBodyNode = createNodeWithAttribuites("div", {

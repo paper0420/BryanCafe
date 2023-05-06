@@ -13,10 +13,10 @@
     <title>Contacts</title>
   </head>
   <body>
-    <div class="w-75 m-auto border vh-100">
+    <div class="w-75 m-auto vh-100">
       <nav class="navbar navbar-expand-lg bg-white fixed-top w-75 m-auto">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./about.html">
+          <a class="navbar-brand" href="./index.html">
             <img src="./images/logo.png" alt="Loga" width="70" height="70" />
           </a>
           <button
@@ -33,7 +33,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./about.html"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >About</a
                 >
               </li>
@@ -50,7 +50,7 @@
 
       <main class="mh-75 bg-light" style="margin-top: 100px">
         <div class="w-75 m-auto text-center">
-          <h1 class="text-center">Contact Us</h1>
+          <h1 class="text-center mt-5 pt-4">Contact Us</h1>
           <form>
             <div class="mb-3">
               <label for="Firstname" class="form-label">Firstname</label>
@@ -72,8 +72,51 @@
               <label for="message" class="form-label">Message Body</label>
               <input type="message" class="form-control" id="subject" />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-dark w-50"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Submit
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Thank you for contacting Bryan Coffee! We have received your
+                    message and appreciate the time you took to write to us. Our
+                    team will review your message and get back to you as soon as
+                    possible. If you need immediate assistance, please call us
+                    at XXX during our business hours. We value your feedback and
+                    look forward to serving you soon at Bryan Coffee. Best
+                    regards, The Bryan Coffee Team
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
+
+          <h1 class="text-center mt-5">Branches</h1>
+          <div id="branches" class="row"></div>
         </div>
       </main>
 
@@ -93,5 +136,6 @@
       const dateNow = new Date();
       document.getElementById("currentYear").innerHTML = dateNow.getFullYear();
     </script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>
