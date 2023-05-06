@@ -17,6 +17,54 @@
 
 <menu>
     <meals>
+     <menuItem>
+            <name>
+                Beetroot and feta salad
+            </name>
+            <price>
+                15.00
+            </price>
+            <description>
+                Suitable for vegetarians, made with fresh beetroot
+            </description>
+            <imageURL>burrito.jpg</imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Sourdough Rye Sandwich
+            </name>
+            <price>
+                18.00
+            </price>
+            <description>
+                Cheese and salad sandwich made with organic, sourdough rye bread
+            </description>
+            <imageURL>pie.jpg</imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Spinach Pie and Salad
+            </name>
+            <price>
+                20.00
+            </price>
+            <description>
+                Tasty pie with salad
+            </description>
+            <imageURL>oatmeal.jpg</imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Feta pancakes with salad
+            </name>
+            <price>
+                19.50
+            </price>
+            <description>
+                Tasty pancake filled with feta and salad
+            </description>
+            <imageURL>avocadotoast.jpg</imageURL>
+        </menuItem>
         <menuItem>
             <name>
                 Avocado toast
