@@ -90,7 +90,7 @@ function createMenuCard(
   cardDescriptionNode.appendChild(document.createTextNode(description));
 
   let cardPriceNode = createNodeWithAttribuites("p", { class: "card-text" });
-  cardPriceNode.appendChild(document.createTextNode(price));
+  cardPriceNode.appendChild(document.createTextNode(price + "$"));
 
   let cardSizeNode = createNodeWithAttribuites("h5", { class: "card-title" });
   cardSizeNode.appendChild(document.createTextNode(size));
